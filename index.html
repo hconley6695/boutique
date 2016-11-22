@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FriendLily</title>
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto');
+  	@import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
+
+  	body {
+  		box-sizing: border-box;
+   		padding: 0;
+  		margin: 0;
+  		font-family: 'Roboto', sans-serif;
+
+  	}
+
+  	.content {
+  		position: relative;
+  	}
+
+  	.content:before {
+	  	content: "";
+	  	position: fixed;
+	  	left: 0;
+	  	right: 0;
+	  	z-index: -1;
+
+	  	display: block;
+	  	background-image: url("four_girls_bckgrd.jpg");
+	  	background-size:cover;
+	  	width: 100%;
+	  	height: 100%;
+	  	filter: opacity(.8);
+	}
+
+  	.header {
+  		background-color: #ffffff;
+  		height: 70px;
+  		position: relative;
+  	}
+
+  	.logo-container {
+  		display: inline-block;
+  	}
+
+  	h1 {
+  		color: #393939;
+  		font-weight: bold 700;
+  		letter-spacing: 4px;
+  		display: inline-block;
+  		font-size: 26px;
+  		padding-left: 140px;
+  		font-family: 'Open Sans', sans-serif; 
+  	}
+
+  	ul {
+  		list-style-type: none;
+  		display: block;
+  	}
+
+  	nav {
+  		display: inline-block;
+  		position: fixed;
+  		right: 100px;
+  		width: 100%;
+  	}
+  	.nav-bar {
+  		color: #393939;
+  		letter-spacing: 2px;
+      white-space: nowrap;/
+  	}
+
+  	.nav-bar li:hover ~ li.hover-effect {
+  		display: block;
+  	}
+
+  	.nav-bar li.hover-effect {
+  		background-color: #f7425a;
+  		display: none;
+  		height: 1px;
+  		width: 100%;
+  		padding: 0 300px 5px 300px;
+  		z-index: 20;
+  		transform: translateY(-12px);
+  	}
+
+  	.nav-bar > li {
+  		display: inline-block;
+  		margin-left: 32px;
+  		position: relative;
+  		font-size: 15px;
+  		letter-spacing: 2.5px;
+  		z-index: 21;
+  	}
+
+  	.nav-bar > li:hover {
+  		background-color: #f7425a;
+  		border-top-left-radius: 3px;
+  		border-top-right-radius: 3px;
+
+  	}
+
+  	.nav-bar > li:hover ul {
+  		display: block;
+  	}
+
+  	.nav-bar li a {
+  		padding: 15px 12px;
+  	}
+
+  	.nav-bar li.dropdown > a {
+  		height: 2em;
+  	}
+
+  	li.hover-effect:hover ~ .submenu {
+  		display: block;
+  	}
+
+  	.submenu {
+  		display: none;
+  		background-color: #f7425a;
+  		color: #ffffff;
+  		float: left;
+  		position: absolute;
+  		top: 54px;
+  		left: 0;
+  		z-index: 25;
+  		margin: 0;
+  		padding: 0;
+  		line-height: 30px;
+  	}
+
+  	.submenu > li  a {
+  		background-color: #f7425a;
+  		color: #ffffff;
+  		width: 180px;
+  		text-align: left;
+  		padding: 5px;
+  		font-size: 12px;
+  		text-align: center;
+  		text-shadow: 1px 1px 1px #666666;
+  	}
+
+  	#about a {
+  		width: 220px;
+  	}
+
+  	a {
+  		text-decoration: none;
+  		color: #393939;
+  		display: block;
+  	}
+
+  	ul li ul {
+  		position: absolute;
+  		width: 180px;
+  		display: none;
+	}
+
+  	ul li ul li a:hover {
+  		background-color: #fa9792;
+  	}
+
+
+  </style>
+</head>
+<body>
+	<div class="content">
+  <div class="header">
+	<!-- <header> -->
+		<div class="logo-container">
+			<h1 class="title-logo">FRIENDLILY</h1>
+		</div>
+		<nav>	
+			<ul class="nav-bar">
+				<li class="dropdown menu" style="margin-left: 650px;">
+					<a href="#">ABOUT</a>
+					<ul class="submenu" id="about">
+						<li><a href="#">OUR STORY</a></li>
+						<li><a href="#">OUR COMMITMENT TO YOU</a></li>
+					</ul>
+				</li>
+				<li class="dropdown menu">
+					<a href="#">LOCATIONS</a>
+					<ul class="submenu" id="locations">
+						<li><a href="#">ATLANTA, GA</a></li>
+						<li><a href="#">BOSTON, MA</a></li>
+            <li><a href="#">NEW YORK, NY</a></li>
+						<li><a href="#">PHILADELPHIA, PA</a></li>
+					</ul>
+				</li>
+				<li class="dropdown menu">
+					<a href="#">PRODUCTS</a>
+					<ul class="submenu" id="products">
+						<li><a href="#">NEW ARRIVALS</a></li>
+						<li><a href="#">FEATURED</a></li>
+						<li><a href="#">TOP RATED</a></li>
+						<li><a href="#">MENS</a></li>
+						<li><a href="#">WOMENS</a></li>
+						<li><a href="#">CHILDRENS</a></li>
+						<li><a href="#">ACCESSORIES</a></li>
+						<li><a href="#">FALL CATALOG</a></li>
+						<li><a href="#">THE ESSENTIALS</a></li>
+						<li><a href="#">SALE</a></li>
+
+					</ul>
+				</li>
+				<li class="menu"><a href="#">BLOG</a></li>
+				<li class="menu"><a href="#">CONTACT</a></li>
+				<li class="hover-effect"><a href="#"></a></li>
+			</ul>
+		</nav>
+
+    </div>
+	<!-- </header> -->
+	</div>
+</body>
+</html>
